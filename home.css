@@ -1,0 +1,806 @@
+:root{
+    /* Define variables for reuse throughout the CSS */
+    --background-color: rgb(5, 9, 23);
+    --border-color:rgb(29, 19, 68, .05)
+}
+
+@font-face {
+    /* Define the font to use */
+    font-family: 'OrbitronFont';
+    src: url('fonts/fontname.ttf');
+  }
+
+body{
+    /* Apply the background color and set the layout */
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+   
+    
+}
+
+nav{
+    /* Set the layout */
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+    
+}
+
+
+
+nav > .nav-section{
+    padding: 2rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 767px){
+    nav > .nav-section{
+        padding: 1rem 1rem;
+        display: flex;
+        gap: 1rem;
+        border-left: 1px solid var(--border-color);
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+#nav-logo-section,
+#nav-link-section{
+    flex-basis: calc(100% / 3);
+}
+
+
+
+#nav-social-section,
+#nav-contact-section{
+    flex-grow: 1;
+}
+*{
+    box-sizing: border-box;
+}
+h1, h2, h3, a, p, span{
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color:white;
+}
+a{
+    text-decoration: none;
+}
+#nav-logo-section{
+    justify-content: flex-start;
+}
+#nav-logo-section > a > i{
+    font-size: 2.5rem;
+}
+
+main{
+    flex-grow: 1;
+    position: relative;
+}
+
+main > article{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 2fr 1fr ;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    
+}
+@media (max-width: 767px){
+    main > article{
+        display: grid;
+        height: 100%;
+        grid-template-rows: 1fr 1.1fr;
+        grid-template-columns: 1fr 1.1fr;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        
+    }
+}
+
+main > article > .article-section {
+    height: 100%;
+}
+
+
+main > article > .article-description-section,
+main > article > .article-nav-section{
+    border-left: 1px solid var(--border-color);
+}
+
+main > article > .article-title-section,
+main > article > .article-nav-section{
+    border-top: 1px solid var(--border-color);
+}
+
+main > article[data-status="inactive"]{
+    transform: translateX(-100%);
+}
+
+article {
+  transition: transform 0.1s;
+}
+
+.article-enter-left {
+  transform: translateX(-100%);
+}
+
+
+  
+
+
+
+
+
+
+
+
+.TitleText {
+    font-size: 20px;
+    text-align: center;
+    align-self: flex-start;
+    color: rbg(255, 253, 208);
+    font-family: 'Orbitron', sans-serif;
+  }
+  @media (max-width: 767px){
+    .TitleText {
+      font-size: 10px;
+      text-align: center;
+      align-self: flex-start;
+      color: rbg(255, 253, 208);
+      font-family: 'Orbitron', sans-serif;
+    }
+  }
+  @media (min-width: 1200px){
+    .TitleText {
+      font-size: 25px;
+      text-align: center;
+      align-self: flex-start;
+      color: rbg(255, 253, 208);
+      font-family: 'Orbitron', sans-serif;
+    }
+  }
+  
+
+  .TitleText:hover{
+    transform: scale(1.01);
+    color: rgb(87, 9, 9);
+  }
+
+
+  strong{
+   
+    font-size: 25px;
+    
+  }
+
+  b{
+    font-size: 38px;
+    color: rbg(255, 253, 208);
+  }  
+  
+  
+  
+  .description-h2{
+    font-size: 18px;
+    padding: 10px;
+    color: rbg(255, 253, 208);
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  @media(max-width: 767px){
+    .description-h2{
+      font-size: 11px;
+      padding: 10px;
+      color: rbg(255, 253, 208);
+      font-family: 'Orbitron', sans-serif;
+    }
+  }
+
+  @media (min-width: 1400px){
+    .description-h2{
+      font-size: 25px;
+      padding: 10px;
+      color: rbg(255, 253, 208);
+      font-family: 'Orbitron', sans-serif;
+    }
+  }
+
+  .description-Paragraph{
+    font-size: 15px;
+    padding: 0px 0px 0px 10px;
+    color: rbg(255, 253, 208);
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  @media (max-width: 767px){
+    .description-Paragraph{
+      font-size: 10px;
+      padding: 0px 0px 0px 10px;
+      color: rbg(255, 253, 208);
+      font-family: 'Orbitron', sans-serif;
+    }
+  }
+
+  @media (min-width: 1400px){
+    .description-Paragraph{
+      font-size: 23px;
+      padding: 0px 0px 0px 10px;
+      color: rbg(255, 253, 208);
+      font-family: 'Orbitron', sans-serif;
+    }
+  }
+  
+.article-nav-button1{
+  color: rgb(74, 230, 222);
+    height: 100px;
+    width: 100px;
+    background: url('https://api.iconify.design/material-symbols/arrow-circle-right-rounded.svg?color=%234b0606&flip=horizontal') no-repeat center center / contain;
+   border: none;
+    border-radius: 50%;
+}
+@media (max-width: 767px){
+  .article-nav-button1{
+    color: rgb(74, 230, 222);
+      height: 50px;
+      width: 50px;
+      background: url('https://api.iconify.design/material-symbols/arrow-circle-right-rounded.svg?color=%234b0606&flip=horizontal') no-repeat center center / contain;
+     border: none;
+      border-radius: 50%;
+  }
+}
+.article-nav-button2{
+  color: rgb(74, 230, 222);
+    height: 100px;
+    width: 100px;
+    background: url('https://api.iconify.design/material-symbols/arrow-circle-right-rounded.svg?color=%234b0606') no-repeat center center / contain;
+   border: none;
+   border-radius: 50%;
+    
+}
+@media (max-width: 767px){
+  .article-nav-button2{
+    color: rgb(74, 230, 222);
+      height: 50px;
+      width: 50px;
+      background: url('https://api.iconify.design/material-symbols/arrow-circle-right-rounded.svg?color=%234b0606') no-repeat center center / contain;
+     border: none;
+     border-radius: 50%;
+      
+  }
+}
+
+  
+
+  .article-nav-button1:hover {
+    background-color: rgb(74, 230, 222);
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  .article-nav-button2:hover {
+    background-color: rgb(74, 230, 222);
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  .logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+      max-width: 80px;
+      max-height: 80px;
+      border-radius: 50%;
+
+  }
+
+  @media (max-width: 767px){
+    .logo{
+      position: absolute;
+      top: 0;
+      left: 0;
+        max-width: 40px;
+        max-height: 40px;
+        border-radius: 50%;
+  
+    }
+  }
+
+
+
+
+
+.article-nav-button1:hover {
+    background-color: grey;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  .article-nav-button2:hover {
+    background-color: grey;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  .logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+      max-width: 80px;
+      max-height: 80px;
+      border-radius: 50%;
+
+  }
+
+  @media (max-width: 767px){
+    .logo{
+      position: absolute;
+      top: 0;
+      left: 0;
+        max-width: 40px;
+        max-height: 40px;
+        border-radius: 50%;
+  
+    }
+  }
+
+
+  .logo:hover{
+    transform: scale(1.2); /* increase size by 20% */
+  }
+
+  
+  
+
+  
+  
+
+#nav-contact-section   a:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.2);
+  }
+  
+  
+
+  #nav-link-section a:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.2);
+  }
+  
+
+
+  #nav-social-section a:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.2);
+  }
+
+  #nav-logo-section > a > .MainTitle {
+    margin-left: 125px;
+    font-size: 30px;
+    position: absolute;
+    top:0;
+    padding: 10px 0px 0px 0px;
+   left: -25px;
+  
+  }
+  @media (max-width: 767px){
+    #nav-logo-section > a > .MainTitle {
+    
+display: none;
+    
+    }
+  }
+
+  .MainTitle:hover{
+    text-decoration: underline;
+    color: grey;
+    transform: scale(1.2);
+  }
+
+  .article-image-section1:hover{
+    transform: scale(1.02);
+  }
+  .article-image-section2:hover{
+    transform: scale(1.02);
+  }
+  .article-image-section3:hover{
+    transform: scale(1.02);
+  }
+  .article-image-section4:hover{
+    transform: scale(1.02);
+  }
+ #WB{
+    font-size: 25px;
+    color: rgb(74, 230, 222);
+   font-family: 'Orbitron', sans-serif;
+   
+ }
+@media (max-width: 767px){
+    #WB{
+        font-size: 18px;
+        color: white;
+        font-family: 'Orbitron', sans-serif;
+        
+    }
+  }
+
+  @media (min-width: 1400px) {
+    #WB{
+      font-size: 30px;
+      color: rgb(74, 230, 222);
+        font-family: 'Orbitron', sans-serif;
+        
+    }
+  }
+ #WB:hover{
+    color: rgb(97, 9, 9)
+ }
+
+ 
+ 
+ .article-image-section1{
+  background-image: url(images/FrontLogo2.png);
+  
+  
+ 
+  
+  /* Stop image from repeating down*/
+  background-repeat: no-repeat;
+  /* Center the image vertically and horizontally at all times */
+  background-position: center right;
+  margin-left: -5px;
+  margin-top: 10px;
+  /* Scale the image to 100% width, and scale it proportionally as well */
+  background-size: 100% auto;
+  /* This is what makes the background image rescale based on its container's size */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 2%;
+  /*make smaller*/
+  background-size: 57%;
+  
+
+
+
+
+  }
+
+  @media (max-width: 767px) {
+    .article-image-section1 {
+      background-image: url(images/FrontLogo2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: auto;
+      width: 100%;
+      border-radius: 2%;
+      background-size: 98%;
+      background-position: center top;
+      margin-left: 1px;
+      
+    }
+   }
+  
+ 
+
+.article-image-section2{
+  background-image: url('images/DalleRobot1Test3.png');
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2%;
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+}
+@media screen and (max-width: 767px) {
+  .article-image-section2 {
+    background-image: url('images/DalleRobot1Vert3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    border-radius: 2%;
+    
+  }
+ }
+
+.article-image-section3{
+  background-image: url('images/DalleAgrBotCut2.png');
+height: auto;
+width: 100%;
+object-fit: cover;
+border-radius: 2%;
+background-repeat: no-repeat;
+background-position: center;
+}
+@media screen and (max-width: 767px) {
+  .article-image-section3 {
+    background-image: url('images/DalleAgrBotSlim3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    border-radius: 2%;
+   
+  }
+}
+
+
+.article-image-section4{
+background-image: url('images/C3POtest1.jpg');
+height: auto;
+width: 78%;
+object-fit: cover;
+border-radius: 2%;
+margin: 0px 0px 0px 90px;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+@media (max-width: 767px) {
+  .article-image-section4 {
+    background-image: url('images/C3POslim1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    border-radius: 2%;
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+.FinalApply{
+  background-color: rgb(5, 9, 23);
+  color: rgb(86, 9, 9);
+  font-size: 25px;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  margin: 0px 0px 0px 0px;
+  border-radius: 2%;
+
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0px 0px 0px 0px;
+}
+
+.FinalApply:hover{
+  background-color: rgb(5, 9, 23);
+  color: rgb(97, 9, 9);
+  font-size: 26px;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  margin: 0px 0px 0px 0px;
+  border-radius: 2%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0px 0px 0px 0px;
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+}
+
+.navText{
+  display: none;
+}
+
+@media (max-width: 767px){
+  .navText{
+    display: block;
+    font-size: 10px;
+    color: rgb(78, 2, 2);
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 767px){
+  b{
+    font-size: 20px;
+    color: white;
+  }
+}
+
+
+#AG{
+  font-size: 35px;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+@media (max-width: 767px){
+  #AG{
+    font-size: 18px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+  }
+}
+
+.ApplySpeech{
+  font-size: 45px;
+  color: rgb(74, 230, 222);
+  font-family: 'Orbitron', sans-serif;
+  /*set to the center left*/
+  text-align: center;
+  margin: 90px 500px 0px 0px;
+  
+
+}
+
+@media (max-width: 767px){
+  .ApplySpeech{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(74, 230, 222);
+    font-family: 'Orbitron', sans-serif;
+    /*set to the center left*/
+   margin: 150px 0px 0px 10px;
+   position: center bottom;
+  
+  }
+}
+
+@media (min-width: 1400px){
+  .ApplySpeech{
+    font-size: 55px;
+    color: rgb(74, 230, 222);
+    font-family: 'Orbitron', sans-serif;
+    /*set to the center left*/
+    text-align: center;
+    margin:100px 700px 0px 0px;
+   
+  }
+}
+
+.ApplySpeech:hover{
+    color: rgb(97, 9, 9);
+  }
+
+
+  footer {
+    background-color: rgb(1, 3, 20);
+    color: white;
+    font-size: 15px;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: -400px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+  }
+
+  @media(max-width: 767px) {
+    footer {
+      background-color: rgb(1, 3, 20);
+      color: white;
+      font-size: 10px;
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      padding: 10px;
+      position: absolute;
+      bottom: -300px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 40%;
+      overflow: hidden;
+    }
+  }
+
+
+  
+
+  
+
+.footer-stuff{
+  color: grey;
+  
+}
+
+.footer-stuff:hover{
+  color: white;
+  transform: scale(1.2);
+  text-decoration: underline;
+}
+  
+#ZI-copy{
+  /*set to the bottom of the footer*/
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  
+  
+}
+
+
+.Z-twitter{
+  height: 50px;
+  width: 50px;
+  content: url('https://api.iconify.design/mdi/twitter.svg?color=%231da1f2');
+}
+
+@media(max-width: 767px) {
+  .Z-twitter{
+    height: 30px;
+    width: 30px;
+    content: url('https://api.iconify.design/mdi/twitter.svg?color=%231da1f2');
+  }
+}
+
+.Z-about{
+  height: 50px;
+  width: 50px;
+  content: url('https://api.iconify.design/mdi/about.svg?color=%23591111');
+ 
+
+}
+@media (max-width: 767px) {
+  .Z-about{
+    height: 30px;
+    width: 30px;
+    content: url('https://api.iconify.design/mdi/about.svg?color=%23591111');
+  }
+}
+
+.Z-subscribe{
+  height: 50px;
+  width: 50px;
+  content: url('https://api.iconify.design/mdi/email.svg?color=%23591111');
+}
+
+@media (max-width: 767px) {
+  .Z-subscribe{
+    height: 30px;
+    width: 30px;
+    content: url('https://api.iconify.design/mdi/email.svg?color=%23591111');
+  }
+}
+
+.Z-apply{
+  background-color: rgb(75, 6, 6);
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 13px 8px;
+  color: rgb(0, 0, 0);
+
+  
+}
+
+@media (max-width: 767px) {
+  .Z-apply{
+    background-color: rgb(75, 6, 6);
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 11px 6px;
+    color: rgb(0, 0, 0);
+  }
+}

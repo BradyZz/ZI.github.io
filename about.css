@@ -1,0 +1,236 @@
+@font-face {
+    /* Define the font to use */
+    font-family: 'OrbitronFont';
+    src: url('fonts/fontname.ttf');
+  }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/TechBackground.png);
+    
+   
+    
+    
+    }
+    
+    
+    
+    nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    nav li {
+    display: inline-block;
+    margin-right: 20px;
+    }
+    
+    nav a {
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    main {
+    margin: 20px;
+    max-width: 800px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.904);
+    padding: 50px;
+    border-radius: 7%;
+
+    border-style: ridge;
+    border-color: rgb(75, 6, 6);
+    }
+    
+    h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    }
+    
+    h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    }
+    
+    p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    }
+    
+    ul {
+    margin-bottom: 20px;
+    }
+    
+    li {
+    margin-bottom: 10px;
+    }
+    
+    /* Styles for the team section */
+    .team {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    .team-member {
+    flex-basis: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .team-member img {
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    }
+    
+    .team-member h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    }
+    
+    .team-member p {
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 0;
+    }
+    
+    /* Styles for the contact section */
+    .contact {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    .contact-info {
+    flex-basis: calc(50% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    }
+    
+    .contact-info ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+    
+    .contact-info li {
+    margin-bottom: 5px;
+    }
+
+   
+        
+    
+    
+   
+    footer{
+        color: white;
+        background-color: black;
+        border-radius: 50%;
+        border-style: ridge;
+        border-color: rgb(75, 6, 6);
+    }
+    @media (max-width: 767px) {
+        footer{
+            color: white;
+            background-color: black;
+            border-radius: 50%;
+            border-style: ridge;
+            border-color: rgb(75, 6, 6);
+            font-size: 75%;
+        }
+    }
+    
+
+    .ColorLine{
+        color: rgb(26, 22, 22);
+       
+    }
+
+    b{
+        color: rgb(75, 6, 6);
+    }
+    .header:hover{
+        transform: scale(1.2);
+        margin-left: 60px;
+    }
+   
+
+    #aboutus{
+        width: 22.75%;
+        margin: -20px 25px 0px 0px;
+    }
+    @media (max-width: 767px) {
+        #aboutus{
+            width: 39%;
+            margin: -20px 25px 0px 0px;
+        }
+    }
+
+    #contactus{
+        width: 18.5%;
+        margin: -20px 25px 0px 0px;
+    }
+    @media (max-width: 767px) {
+        #contactus{
+            width: 36%;
+            margin: -20px 25px 0px 0px;
+        }
+    }
+
+    #ourteam{
+        width: 16.5%;
+        margin: -20px 25px 0px 0px;
+    }
+    @media (max-width: 767px) {
+        #ourteam{
+            width: 28%;
+            margin: -20px 25px 0px 0px;
+        }
+    }
+
+    #ourservices{
+        width: 22.5%;
+        margin: -20px 25px 0px 0px;
+    }
+    @media (max-width: 767px) {
+        #ourservices{
+            width: 37%;
+            margin: -20px 25px 0px 0px;
+        }
+    }
+
+    #Welcome{
+        text-indent: 30px;
+    }
+
+    .home-btn img {
+        background-color: rgb(46, 12, 12);
+        width: 65px;
+        height: 65px;
+       
+        border-radius: 50%;
+      }
+      .home-btn:hover{
+        text-decoration: underline;
+        text-decoration: scale(1.2);
+    }

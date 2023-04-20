@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Subscribe</title>
+      <link rel="stylesheet" href="subscribe.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <body>
+      <div class="home-btn">
+         <a href="index.html">
+           <img src="images/HomeIcon.png" alt="Home" />
+         </a>
+       </div>
+       
+      <div class="start-btn">
+         <a href="#">Subscribe</a>
+      </div>
+      <div class="center modal-box">
+         <div class="fas fa-times"></div>
+         <div class="fas fa-envelope icon1"></div>
+         <header>Don't miss out!</header>
+         <p>
+            Get the latest news and updates about Z Industries delivered to your inbox.
+         </p>
+         <form action="index.html">
+            <div class="fas fa-envelope icon2"></div>
+            <input type="email" required placeholder="abc@example.com">
+            <button>Subscribe</button>
+         </form>
+         
+      </div>
+      <script>
+         $(document).ready(function(){
+           $('.start-btn').click(function(){
+             $('.modal-box').toggleClass("show-modal");
+             $('.start-btn').toggleClass("show-modal");
+           });
+           $('.fa-times').click(function(){
+             $('.modal-box').toggleClass("show-modal");
+             $('.start-btn').toggleClass("show-modal");
+           });
+         });
+      </script>
+
+
+
+
+   </body>
+
+</html>

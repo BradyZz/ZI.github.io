@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "focal-woods-381700",
+  "private_key_id": "e70b9f3961b63bd673adc9b1bd8e41bfb92defc7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCoa20AGd3lYHW1\nEG5A2GBpVhLHuFgxxaQPT46uOxSWrv6somOdwgDNUqtKI/tYWtE7lD9fkeu5F90d\nVOEiJfkGfNPGHwnYLy/co8nA7FA7kmvK930IYBcTmzFU2oGd27xGUQTZIeXVYyfa\noL05nzYeVvxjM5+YJOsQVoF7s8Yg1ADuTtq563h5JqY1Ji0BSuCuhAdyve/7VUgk\n4GWtj6X5ypsJEPbENTTA/5lxau2B2N1w64eNBffxkFsPkzthwvHxRAbjj9z86rpO\nccMZfDrcQfSpN/CvOYrdvoBnDLA1V2VV2+TjVEnAegxFPPMS/HngJlmYDYzBUyZx\nFMQgyB0PAgMBAAECggEADopHvMx+5cCwKNOkUSDdIfr2YBvAMXvYsCG0NcKQAnpV\nLl5Or14CZ7eNZjc5CeW9TqF73ypf6Xjv9ApR7XrNxwub1Oz1Ep7wSOIzFt7QBnSb\nrcg0GTcChwTM+4Bp1FEWLhPskTpl90g6NpvN+l2OdIwZ+g6I5r+5M43kW+OnZUoE\neAVhTkA8Vy73ogci900I9TUWPMvRoZcLgmmhAaRYN2Fu1IW8IgY3iLCCn0JClboX\nIFSrxwu7QQL/+xvgEwpIRo/iSRB9bx60vxczov3iLjNSxcdtPgOxnTNyuXuLr/XW\n3g8K3y2tX2MLIf7W3cSTGFCox/51lAdpAf5lS4Z7sQKBgQDQi5j/ae46wQX1NBVl\nv9Z5wNTP0rKSdCS9vRKlrgnGlw8IGAooaWRZaljlbhcBV34znp1xOZvzTKjVDNus\nT2CrOpRRAZiNGu5hz9gVbWvgnMh6Myk+M0l+G5yrEWrxopPfY1Wf+Abk66g2ja4m\nOHUzhLaXfZfvMl69bzm2TUmdLQKBgQDOvmKLbOBwJjJM4C6vnh4m8KsrmFme+uW+\nu+i+IXyO84jjqWwgcPhr5xLH7nmS8Qrm4lTHVvcryxSLEr2ReUGjyn8rNQCFBNGM\noHJIIdCX9ZDH9l14DVCe86xhAtHsYl9P1pEWCN4+3gfs1fbThcNpm8l53JkEVaEF\nUBEzM+CgqwKBgA9lHshMI6AGu8/cJnA6dzTJvWwSG8if9k5jdMryTBpy8FMioy1U\nimnnZeSZ+ezJbrGU1f6TyCVv1U7VAip4OaSqUGSif4Z7JHnoBAWg7EPKjyomOLc0\nxgofM7OVN5Xa8JufE6UZhDjGBMbyMpbzuAMzmt8YEG1CBKhrW5FPp02JAoGAH4iS\nZ0m4AeMRkQAwnsCzQKU8tm2KXeFO4YSvvzBEW1lx66ePwnL4sRyRlMUe7fat/wFO\nhQkSsi9Ldtro5yNji6P7OY/gAGn3vEdMpwvhUQw3hQhiwUjmnxfzluhjNHbcqsTD\nZGT94QDknI8WErU4VQdZ96hZ/ntBEBpiRTkIbfkCgYAo1xr/4qNG3weQaXp5XNH3\n4SKy59UUXcGkpaQAdI1BktWU7moSWZVvYzInh52IfLJSGRJq1yuFKcmE13USy57a\ngupBoEGb8oy1UUd5CvRIuqY2z3H9miTw11XAry+NphES82op1bi41Mk0GprNxkIe\nHg/nvJ4rRYyBF2zM25iGgg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "z-industries-email-bot@focal-woods-381700.iam.gserviceaccount.com",
+  "client_id": "106645482440669904000",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/z-industries-email-bot%40focal-woods-381700.iam.gserviceaccount.com"
+}
