@@ -452,7 +452,7 @@ display: none;
  
  
  .article-image-section1{
-  background-image: url(images/FrontLogo2.png);
+  background-image: url(FrontLogo2.png);
   
   
  
@@ -481,7 +481,7 @@ display: none;
 
   @media (max-width: 767px) {
     .article-image-section1 {
-      background-image: url(images/FrontLogo2.png);
+      background-image: url(FrontLogo2.png);
       background-size: cover;
       background-repeat: no-repeat;
       height: auto;
@@ -497,7 +497,7 @@ display: none;
  
 
 .article-image-section2{
-  background-image: url('images/DalleRobot1Test3.png');
+  background-image: url('DalleRobot1Test3.png');
   height: auto;
   width: 100%;
   object-fit: cover;
@@ -508,7 +508,7 @@ display: none;
 }
 @media screen and (max-width: 767px) {
   .article-image-section2 {
-    background-image: url('images/DalleRobot1Vert3.jpg');
+    background-image: url('DalleRobot1Vert3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
@@ -519,7 +519,7 @@ display: none;
  }
 
 .article-image-section3{
-  background-image: url('images/DalleAgrBotCut2.png');
+  background-image: url('DalleAgrBotCut2.png');
 height: auto;
 width: 100%;
 object-fit: cover;
@@ -529,7 +529,7 @@ background-position: center;
 }
 @media screen and (max-width: 767px) {
   .article-image-section3 {
-    background-image: url('images/DalleAgrBotSlim3.png');
+    background-image: url('DalleAgrBotSlim3.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
@@ -541,7 +541,7 @@ background-position: center;
 
 
 .article-image-section4{
-background-image: url('images/C3POtest1.jpg');
+background-image: url('C3POtest1.jpg');
 height: auto;
 width: 78%;
 object-fit: cover;
@@ -553,7 +553,7 @@ background-position: center;
 
 @media (max-width: 767px) {
   .article-image-section4 {
-    background-image: url('images/C3POslim1.jpg');
+    background-image: url('C3POslim1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
